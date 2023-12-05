@@ -13,6 +13,9 @@ app.set("views", path.join(__dirname, "views"));
 app.use(express.urlencoded({extended: false}));
 app.use(express.json()); // Express 미들웨어 설정
 
+// public 경로 지정
+app.use(express.static(`${__dirname}/`));
+
 //모듈 설정
 home = require("./routes/homeRoute")
 
