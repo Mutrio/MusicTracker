@@ -13,11 +13,16 @@ app.set("views", path.join(__dirname, "views"));
 app.use(express.urlencoded({extended: false}));
 app.use(express.json()); // Express 미들웨어 설정
 
+//모듈 설정
+home = require("./routes/homeRoute")
+
 // Route.js 파일을 가져와서 사용
 const musicRoute = require("./routes/musicRoute");
 
 // Route를 등록
+app.use("/", home);
 app.use("/music", musicRoute);
+
 
 // 서버 시작
 const PORT = 3000;
