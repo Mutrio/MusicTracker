@@ -3,9 +3,6 @@ const app = express();
 const layouts = require("express-ejs-layouts");
 const path = require('path');
 
-const errorController = require("./controllers/errorController");
-const homeController = require("./controllers/homeController");
-
 app.set("view engine", "ejs"); //ejs 사용
 app.set("views", path.join(__dirname, "views"));
 
@@ -17,14 +14,12 @@ app.use(express.json()); // Express 미들웨어 설정
 app.use(express.static(`${__dirname}/`));
 
 //모듈 설정
-home = require("./routes/homeRoute")
-
-// Route.js 파일을 가져와서 사용
-const musicRoute = require("./routes/musicRoute");
+home = require("./routes/homeRoute");
+music = require("./routes/musicRoute");
 
 // Route를 등록
 app.use("/", home);
-app.use("/music", musicRoute);
+app.use("/music", music);
 
 
 // 서버 시작
