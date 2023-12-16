@@ -40,6 +40,7 @@
 //   console.log(`Server is running on port ${PORT}`);
 // });
 
+// main.js
 const express = require("express");//express 요청
 const app = express();
 const layouts = require("express-ejs-layouts");
