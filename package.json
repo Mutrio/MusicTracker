@@ -5,7 +5,7 @@
   "main": "main.ejs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-   "build": "main.js"
+   "build": "parcel build main.js"
   },
   "author": "",
   "license": "ISC",
