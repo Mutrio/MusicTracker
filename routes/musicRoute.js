@@ -13,6 +13,7 @@ router.get("/", musicController.music);
 // 각 버튼을 눌렀을 때의 리다이렉션 라우트 추가
 router.get("/happy", (req, res) => {
   res.redirect("/music/happy");
+});
 
 router.get("/sad", (req, res) => {
   res.redirect("/music/sad");
@@ -27,8 +28,7 @@ router.get("/comfortable", (req, res) => {
 });
 
 router.get("/cheerful", (req, res) => {
-  res.redirect("/music/cheerful");");
-});
+  res.redirect("/music/cheerful");
 });
 
 module.exports = router;
