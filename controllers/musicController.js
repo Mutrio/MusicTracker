@@ -1,3 +1,3 @@
-exports.timeline = (req, res) => {
+exports.music = (req, res) => {
     res.render("music");
   };
