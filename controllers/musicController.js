@@ -1,3 +1,3 @@
-exports.music = async (req, res) => {
+exports.music = (req, res) => {
     res.render("music");
   };
