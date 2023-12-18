@@ -9,7 +9,6 @@ body{
     width: 200px;
     display: flex;
     position: absolute;
-    box-shadow: 5px 5px 5px rgb(255,255,255,0.3)inset, -5px -5px 5px rgb(0,0,0,0.3)inset,5px 5px 5px rgb(50,50,50,0.3);
     justify-content: center;
     align-items: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -19,24 +18,28 @@ body{
 
 .happy{
     background-color: #FfE66D;
+    box-shadow: 5px 5px 5px rgb(255,255,255,0.3)inset, -5px -5px 5px rgb(0,0,0,0.3)inset,5px 5px 5px rgb(50,50,50,0.3);
     top:40%;
     left:10%;
 }
 
 .sad{
     background-color: #292F36;
+    box-shadow: 5px 5px 5px rgb(255,255,255,0.3)inset, -5px -5px 5px rgb(0,0,0,0.3)inset,5px 5px 5px rgb(50,50,50,0.3);
     top:10%;
     left:25%;
 }
 
 .angry{
     background-color: #FF6B6B;
+    box-shadow: 5px 5px 5px rgb(255,255,255,0.3)inset, -5px -5px 5px rgb(0,0,0,0.3)inset,5px 5px 5px rgb(50,50,50,0.3);
     top:30%;
     left:40%;
 }
 
 .comfortable{
     background-color: #F7FFF7;
+    box-shadow: 5px 5px 5px rgb(255,255,255,0.3)inset, -5px -5px 5px rgb(0,0,0,0.3)inset,5px 5px 5px rgb(50,50,50,0.3);
     top:50%;
     left:60%;
     color:#292F36
@@ -44,6 +47,7 @@ body{
 
 .cheerful{
     background-color: #4ECDC4;
+    box-shadow: 5px 5px 5px rgb(255,255,255,0.3)inset, -5px -5px 5px rgb(0,0,0,0.3)inset,5px 5px 5px rgb(50,50,50,0.3);
     top:40%;
     left:80%;
 }
