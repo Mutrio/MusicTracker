@@ -1,7 +1,7 @@
 node {
         def app
         stage('Clone repository') {
-                git 'https://github.com/Mutrio/MusicTracker.git'
+                checkout scm
         }
         stage('Build image') {
                 app = docker.build("woddu34/test")
